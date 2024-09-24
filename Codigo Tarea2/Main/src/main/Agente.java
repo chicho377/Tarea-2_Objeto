@@ -26,7 +26,7 @@ public class Agente {
             System.out.println(nombre + " ha utilizado la habilidad definitiva.");
             habilidadUltimaCarga = 0; // resetea la carga despues de que se usa
         }else{
-            System.out.println("Habilidad definitiva aun no esta cargada. Faltan" + (7 - habilidadUltimaCarga)+ " puntos.");
+            System.out.println("Habilidad definitiva aun no esta cargada. Faltan " + (7 - habilidadUltimaCarga)+ " puntos.");
         }
     }
     
