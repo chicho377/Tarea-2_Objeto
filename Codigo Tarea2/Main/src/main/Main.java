@@ -27,21 +27,74 @@ public class Main {
 
             switch (opcion) {
                 case 1:
-                    //ingresarAgenteManual(scanner);
+                    ingresarAgenteManual();
                     break;
                 case 2:
-                    //usarAgentePreestablecido();
+                    usarAgentePreestablecido();
                     break;
                 case 3:
-                    System.out.println("Saliendo del programa...");
+                    System.out.println("Saliendo del programa");
                     break;
                 default:
-                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+                    System.out.println("Opcion no valida. Intentelo de nuevo.");
             }
-        } while (opcion != 3);
+        } while (opcion != 3); // se repite hasta no elegir la opcion de salir 3
+    }
+    
+    public static void ingresarAgenteManual() {
+        // variables
+        String nombre, rol;
+        int habilidadUltimaCarga, puntos;
+        // scanner para obtener datos
+        Scanner scanner = new Scanner(System.in);
+
+        // obtener datos manualmente
+        System.out.println("Ingrese el nombre del agente seleccionado: ");
+        nombre = scanner.nextLine();
+        System.out.println("Ingrese el rol del agente seleccionado: ");
+        rol = scanner.nextLine();
+        System.out.println("Ingrese los puntos actuales de la habilidad definitiva: ");
+        habilidadUltimaCarga = scanner.nextInt();
+
+        // crear objeto del agente
+        Agente agente = new Agente(nombre, rol, habilidadUltimaCarga);
+
+        // mostrar detalles del agente
+        agente.mostrarDetalles();
+
+        // intentar usar la habilidad definitiva
+        agente.usarUltima();
+
+        // pedir puntos a cargar
+        System.out.println("Ingrese los puntos a cargar: ");
+        puntos = scanner.nextInt();
+
+        // cargar más puntos a la habilidad definitiva
+        agente.cargarUltima(puntos);
+
+        // intentar usar la habilidad definitiva nuevamente
+        agente.usarUltima();
+    }
+
+    public static void usarAgentePreestablecido() {
+        // crear un objeto preestablecido (Jett)
+        Agente jett = new Agente("Jett", "Duelista", 4);
+
+        // mostrar detalles del agente preestablecido
+        jett.mostrarDetalles();
+
+        // intentar usar la habilidad definitiva
+        jett.usarUltima();
+
+        // cargar más puntos y volver a intentar usar la habilidad definitiva
+        jett.cargarUltima(2);
+        jett.usarUltima();
     }
     
     public static void main(String[] args) {
+        // llamar al menu
+        menu();
+        
         /* Profe para practicar el scanner lo hice que hay que ingresar los datos
         entonces le voy a dejar la lista de agentes.
     Listado de agentes y sus roles en Valorant:
@@ -75,50 +128,6 @@ public class Main {
     4. Astra
     5. Harbor
 */
-        
-        // variables
-        String nombre;
-        String rol;
-        int habilidadUltimaCarga;
-        int puntos;
-        
-        // scanner para obtener datos
-        Scanner scanner = new Scanner(System.in);
-        
-        // obtener datos
-        System.out.println("Ingrese el nombre del agente seleccionado: ");
-        nombre = scanner.nextLine();
-        System.out.println("Ingrese el rol del agente seleccionado: ");
-        rol = scanner.nextLine();
-        System.out.println("Ingrese los puntos actuales que posee de la habilidad definitiva: ");
-        habilidadUltimaCarga = scanner.nextInt();
-        
-        // crear objeto del agente
-        Agente agente = new Agente(nombre, rol, habilidadUltimaCarga);
-        
-        // objeto sin scanner
-        Agente jett = new Agente("Jett", "Duelista", 4);
-        
-        // mostrar detalles del agente
-        agente.mostrarDetalles();
-        jett.mostrarDetalles();
-        
-        // intentar usar habilidad definitiva
-        agente.usarUltima();
-        jett.usarUltima();
-        
-        // pedir puntos a cargar
-        System.out.println("Ingrese los puntos a cargar: ");
-        puntos = scanner.nextInt();
-        
-        
-        // cargar mas puntos a la habilidad definitiva
-        agente.cargarUltima(puntos);
-        jett.cargarUltima(2);
-        
-        // intentar usar la habilidad definitiva nuevamente
-        agente.usarUltima();
-        jett.usarUltima();
     }
     
 }
