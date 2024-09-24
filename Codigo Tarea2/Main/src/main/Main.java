@@ -17,15 +17,15 @@ public class Main {
         entonces le voy a dejar la lista de agentes.
     Listado de agentes y sus roles en Valorant:
 
-    Duelistas (Ataque agresivo):
-    1. Jett
+    Duelistas (Ataque agresivo): (6 puntos requeridos para la definitiva)
+    1. Jett 
     2. Phoenix
     3. Reyna
     4. Raze
     5. Yoru
     6. Neon
 
-    Iniciadores (Abren espacios y apoyan al equipo):
+    Iniciadores (Abren espacios y apoyan al equipo): (7 puntos requeridos para la definitiva)
     1. Breach
     2. Sova
     3. Skye
@@ -33,13 +33,13 @@ public class Main {
     5. Fade
     6. Gekko
 
-    Centinelas (Defienden y protegen al equipo):
+    Centinelas (Defienden y protegen al equipo): (8 puntos requeridos para la definitiva)
     1. Sage
     2. Cypher
     3. Killjoy
     4. Chamber
 
-    Controladores (Controlan el mapa y bloquean visión):
+    Controladores (Controlan el mapa y bloquean visión): (7 puntos requeridos para la definitiva)
     1. Brimstone
     2. Viper
     3. Omen

@@ -14,6 +14,38 @@ public class Agente {
         
         // asignar puntos necesarios para la habilidad definitiva segun el agente
         switch(nombre.toLowerCase()){
+            case "jett":
+            case "raze":
+            case "reyna":
+            case "neon":
+            case "yoru":
+            case "phoenix":
+                this.puntosUltimaNecesarios = 6; // duelistas
+                break;
+            case "brimstone":
+            case "viper":
+            case "omen":
+            case "astra":
+            case "harbor":
+                this.puntosUltimaNecesarios = 7; // controladores
+                break;
+            case "sage":
+            case "cypher":
+            case "killjoy":
+            case "chamber":
+                this.puntosUltimaNecesarios = 8; // xentinelas
+                break;
+            case "breach":
+            case "sova":
+            case "skye":
+            case "kay/o":
+            case "fade":
+            case "gekko":
+                this.puntosUltimaNecesarios = 7; // iniciadores
+                break;
+            default:
+                this.puntosUltimaNecesarios = 7; // valor por defecto
+                break;
         }
     }
     
