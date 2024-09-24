@@ -11,4 +11,11 @@ public class Agente {
         this.rol = rol;
         this.habilidadUltimaCarga = habilidadUltimaCarga;
     }
+    
+    // metodo para mostrar los detalles del agente
+    public void mostrarDetalles(){
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
+    }
 }
