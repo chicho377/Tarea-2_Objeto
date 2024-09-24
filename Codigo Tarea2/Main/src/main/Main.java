@@ -10,7 +10,10 @@ package main;
  */
 public class Main {
     public static void main(String[] args) {
+        // crear objeto del agente
+        Agente agente = new Agente("Jett", "Duelista", 5);
         
+        agente.mostrarDetalles();
     }
     
 }
