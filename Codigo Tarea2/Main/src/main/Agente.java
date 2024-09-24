@@ -18,4 +18,15 @@ public class Agente {
         System.out.println("Rol: " + rol);
         System.out.println("Carga de habilidad ultima: " + habilidadUltimaCarga + "/7");
     }
+    
+    // metodo para usar la habilidad definitiva
+    public void usarUltima(){
+        if (habilidadUltimaCarga == 7) {
+            System.out.println("");
+            habilidadUltimaCarga = 0; // resetea la carga despues de que se usa
+        }else{
+            System.out.println("");
+        }
+    }
+    
 }
