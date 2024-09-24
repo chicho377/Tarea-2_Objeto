@@ -14,8 +14,8 @@ public class Agente {
     
     // metodo para mostrar los detalles del agente
     public void mostrarDetalles(){
-        System.out.println("");
-        System.out.println("");
-        System.out.println("");
+        System.out.println("Nombre del agente: " + nombre);
+        System.out.println("Rol: " + rol);
+        System.out.println("Carga de habilidad ultima: " + habilidadUltimaCarga + "/7");
     }
 }
