@@ -4,12 +4,17 @@ public class Agente {
     String nombre;
     String rol;
     int habilidadUltimaCarga;
+    int puntosUltimaNecesarios;
     
     // constructor parametrizado | para inicializar los atributos
     public Agente(String nombre, String rol, int habilidadUltimaCarga){
         this.nombre = nombre;
         this.rol = rol;
         this.habilidadUltimaCarga = habilidadUltimaCarga;
+        
+        // asignar puntos necesarios para la habilidad definitiva segun el agente
+        switch(nombre.toLowerCase()){
+        }
     }
     
     // metodo para mostrar los detalles del agente
