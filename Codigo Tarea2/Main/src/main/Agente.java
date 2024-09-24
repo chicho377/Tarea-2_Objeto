@@ -59,23 +59,23 @@ public class Agente {
     // metodo para usar la habilidad definitiva
     public void usarUltima(){
         // verificacion de que los puntos que se tienen son los que se ocupan
-        if (habilidadUltimaCarga == 7) {
+        if (habilidadUltimaCarga >= puntosUltimaNecesarios) {
             System.out.println(nombre + " ha utilizado la habilidad definitiva.");
             habilidadUltimaCarga = 0; // resetea la carga despues de que se usa
         }else{
-            System.out.println("Habilidad definitiva aun no esta cargada. Faltan " + (7 - habilidadUltimaCarga)+ " puntos.");
+            System.out.println("Habilidad definitiva aun no esta cargada. Faltan " + (puntosUltimaNecesarios - habilidadUltimaCarga)+ " puntos.");
         }
     }
     
     // metodo para cargar puntos de la habilidad ultima
     public void cargarUltima(int puntos){
         // verificacion de que se tengan los puntos maximos de la definitiva
-        if (habilidadUltimaCarga + puntos >= 7) {
-            habilidadUltimaCarga = 7;
+        if (habilidadUltimaCarga + puntos >= puntosUltimaNecesarios) {
+            habilidadUltimaCarga = puntosUltimaNecesarios;
             System.out.println("Habilidad definitiva completamente cargada.");
         }else{
             habilidadUltimaCarga += puntos;
-            System.out.println("Se han cargador " + puntos + " puntos. Carga actual: " + habilidadUltimaCarga + "/7.");
+            System.out.println("Se han cargador " + puntos + " puntos. Carga actual: " + habilidadUltimaCarga + "/" + puntosUltimaNecesarios + ".");
         }
     }
 }
