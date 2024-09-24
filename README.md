@@ -1,10 +1,10 @@
 # 🚀 Agente Interactivo
 
-¡Bienvenido a **Agente Interactivo**! 🎮 Este proyecto es una aplicación en Java que permite a los usuarios interactuar con agentes de un juego de disparos, similar a **Valorant**. Aquí podrás gestionar tus agentes, ingresar nuevos y utilizar habilidades definitivas.
+¡Bienvenido a **Agente Interactivo**! 🎮 Esta es una aplicación en Java que permite a los usuarios interactuar con agentes de un juego de disparos, similar a **Valorant**. Aquí podrás gestionar tus agentes, ingresar nuevos y utilizar habilidades definitivas.
 
-## 📖 Descripción del Proyecto
+## 📖 Descripción del Programa
 
-La aplicación ofrece un menú intuitivo que permite al usuario:
+El programa ofrece un menú intuitivo que permite al usuario:
 
 - **👤 Ingresar un nuevo agente manualmente.**
 - **✨ Utilizar un agente preestablecido (Jett).**
