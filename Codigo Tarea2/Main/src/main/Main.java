@@ -24,7 +24,7 @@ public class Main {
             System.out.println("3. Salir");
 
             opcion = scanner.nextInt();
-
+            // switch para verificar la opcion del menu
             switch (opcion) {
                 case 1:
                     ingresarAgenteManual();
@@ -41,6 +41,7 @@ public class Main {
         } while (opcion != 3); // se repite hasta no elegir la opcion de salir 3
     }
     
+    // metodo para ingresar el agente manualmente
     public static void ingresarAgenteManual() {
         // variables
         String nombre, rol;
@@ -76,6 +77,7 @@ public class Main {
         agente.usarUltima();
     }
 
+    // metodo para usar agente preestablecido
     public static void usarAgentePreestablecido() {
         // crear un objeto preestablecido (Jett)
         Agente jett = new Agente("Jett", "Duelista", 4);
@@ -95,8 +97,12 @@ public class Main {
         // llamar al menu
         menu();
         
-        /* Profe para practicar el scanner lo hice que hay que ingresar los datos
+        /* Profe para practicar el scanner lo mejore e hice que hay que ingresar los datos
         entonces le voy a dejar la lista de agentes.
+        
+        Aunque tambien queria dejarlo con los datos preestablecidos como lo hice al principio
+        de prubea, entonces agregue un menu y deje las dos opciones, crearlo y el ya pre establecido
+    
     Listado de agentes y sus roles en Valorant:
 
     rol = Duelistas (Ataque agresivo): (6 puntos requeridos para la definitiva)
