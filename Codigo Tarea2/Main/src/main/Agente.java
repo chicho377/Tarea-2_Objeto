@@ -21,11 +21,12 @@ public class Agente {
     
     // metodo para usar la habilidad definitiva
     public void usarUltima(){
+        // verificacion de que los puntos que se tienen son los que se ocupan
         if (habilidadUltimaCarga == 7) {
-            System.out.println("");
+            System.out.println(nombre + " ha utilizado la habilidad definitiva.");
             habilidadUltimaCarga = 0; // resetea la carga despues de que se usa
         }else{
-            System.out.println("");
+            System.out.println("Habilidad definitiva aun no esta cargada. Faltan" + (7 - habilidadUltimaCarga)+ " puntos.");
         }
     }
     
