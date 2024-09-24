@@ -53,7 +53,7 @@ public class Agente {
     public void mostrarDetalles(){
         System.out.println("Nombre del agente: " + nombre);
         System.out.println("Rol: " + rol);
-        System.out.println("Carga de habilidad ultima: " + habilidadUltimaCarga + "/7");
+        System.out.println("Puntos actuales de la habilidad definitiva: " + habilidadUltimaCarga + "/" + puntosUltimaNecesarios);
     }
     
     // metodo para usar la habilidad definitiva
