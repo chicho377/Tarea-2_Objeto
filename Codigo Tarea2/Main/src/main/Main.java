@@ -15,6 +15,30 @@ public class Main {
     public static void menu(){
           Scanner scanner = new Scanner(System.in);
           int opcion;
+          
+          // bucle para repetir el menu que se seleccione una opcion valida o salir
+          do {
+            System.out.println("Seleccione una opcion:");
+            System.out.println("1. Ingresar agente manualmente");
+            System.out.println("2. Usar agente preestablecido (Jett)");
+            System.out.println("3. Salir");
+
+            opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    //ingresarAgenteManual(scanner);
+                    break;
+                case 2:
+                    //usarAgentePreestablecido();
+                    break;
+                case 3:
+                    System.out.println("Saliendo del programa...");
+                    break;
+                default:
+                    System.out.println("Opción no válida. Inténtelo de nuevo.");
+            }
+        } while (opcion != 3);
     }
     
     public static void main(String[] args) {
