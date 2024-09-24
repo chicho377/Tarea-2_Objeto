@@ -32,12 +32,13 @@ public class Agente {
     
     // metodo para cargar puntos de la habilidad ultima
     public void cargarUltima(int puntos){
+        // verificacion de que se tengan los puntos maximos de la definitiva
         if (habilidadUltimaCarga + puntos >= 7) {
             habilidadUltimaCarga = 7;
-            System.out.println("");
+            System.out.println("Habilidad definitiva completamente cargada.");
         }else{
             habilidadUltimaCarga += puntos;
-            System.out.println("");
+            System.out.println("Se han cargador " + puntos + " puntos. Carga actual: " + habilidadUltimaCarga + "/7.");
         }
     }
 }
